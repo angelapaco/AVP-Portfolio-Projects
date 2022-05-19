@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@50;100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #353437;
+  min-height: 100vh;
+  height: 100%
+}
+
+nav{
+	top: 0;
+	position: relative;
+	z-index: 1000;
+	height: 55px;
+	background: rgba(88, 75, 79, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 15px 0px 25px;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul li{
+	margin: 0 25px;
+}
+
+nav ul li a{
+	color: #EED9B7;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: sticky;
+	letter-spacing: 2px;
+	font-size: 13px;
+	transition: 0.3s ease;
+	border-style: dotted;
+	border-color: rgba(0, 0, 0, 0);
+	border-width: 5px;
+	border-top: 10px;
+	border-bottom: 10px;
+	border-radius: 20px;
+	transition-property: color, background;
+  padding: 4px 5px;
+}
+
+nav ul li a:hover{
+  color: #EED9B7;
+  background-color: rgba(247, 188, 177, 0.7);
+  cursor: pointer;
+}
+
+#imglogo{
+  width: 70px;
+  margin-top: 8px;
+}
+
+nav .burger i{
+	color: #EED9B7;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#toggler{
+	display: none;
+}
+@media (max-width: 95vh){
+	nav .burger i{
+		display: block;
+	}
+
+	#toggler:checked ~ .burger i:before{
+		content: "\f00d";
+	}
+
+	nav ul{
+		position: fixed;
+		top: 55px;
+		right: -100%;
+		background: rgba(38, 35, 33, 0.5);
+		height: 100vh;
+		width: 10em;
+		display: block;
+		text-align: center;
+		transition: all 0.3s;
+	}
+
+	#toggler:checked ~ ul{
+		right: 0%;
+	}
+
+	nav ul li{
+		margin: 40px 0;
+	}
+
+	nav ul li a{
+		font-size: 13px;
+	}
+
+	nav ul li a:hover{
+		color: #78AF9F;
+		background: none;
+	}
+}
+
+
+
+.texts{
+  text-align: center;
+  margin: 50px 50px 70px 50px;
+  color: #EED9B7;
+}
+
+.texts h1{
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.texts p{
+  font-size: 15px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 60px;
+}
+
+.wrapper{
+  position: relative;
+  width: 600px;
+  display: inline-block;
+}
+
+.img1{
+  width: 600px;
+  border-radius: 16px;
+  display: block;
+}
+
+.oltxt{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 17px;
+  left: 15px;
+}
+
+.cclass{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  border: 2px solid #FFD152;
+  padding: 2px 7px;
+  border-radius: 30px;
+}
+
+.overlay{
+  border-radius: 15px;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: rgb(93,136,123);
+  background: linear-gradient(0deg, rgba(93,136,123,1) 0%, rgba(29,29,30,0) 99%);
+  transition: background, 0.3s ease;
+}
+
+.wrapper:hover .overlay,.wrapper:hover .overlay{
+  opacity: 1;
+}
+
+
+.wrapper2{
+  position: relative;
+  width: 600px;
+  display: inline-block;
+}
+
+.img2{
+  width: 600px;
+  border-radius: 16px;
+  display: block;
+}
+
+.oltxt2{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 17px;
+  left: 15px;
+}
+
+.overlay2{
+  border-radius: 15px;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: rgb(93,136,123);
+  background: linear-gradient(0deg, rgba(93,136,123,1) 0%, rgba(29,29,30,0) 99%);
+  transition: background, 0.3s ease;
+}
+
+.htmlclass{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: 2px solid #FFD152;
+  padding: 0px 7px;
+  border-radius: 30px;
+}
+
+.htmlclass2{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+  border: 2px solid #FFD152;
+  padding: 0px 7px;
+  border-radius: 30px;
+}
+
+.cssclass{
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: 2px solid #FFD152;
+  padding: 0px 7px;
+  border-radius: 30px;
+}
+
+.wrapper2:hover .overlay2,.wrapper2:hover .overlay2{
+  opacity: 1;
+}
+
+@media (max-width: 950px){
+  .container{
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.contact{
+  margin-top: 60px;
+  width: 100%;
+  height: 60px;
+  background: rgba(88, 75, 79, 0.5);
+  color: #EED9B7;
+  display: flex;
+  justify-content: space-between;
+  border: 12px solid rgba(0,0,0,0);
+}
+
+.contact .ctto{
+  margin-top: 6px;
+}
+
+#footerlogo{
+  width: 60px;
+  margin-top: 0px;
+}
+
+.clogo{
+  font-size: 25px;
+  display: flex;
+  gap: 20px;
+  color: #EED9B7;
+  transition-property: color;
+}
+
+.clogo a:hover{
+  transition: color, 0.3s ease;
+  color: #F7BBB1
+}
+
+a{
+  all: unset;
+}
+
+a:hover{
+  cursor: pointer;
+}
