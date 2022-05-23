@@ -78,7 +78,11 @@ nav .burger i{
 #toggler{
 	display: none;
 }
-@media (max-width: 95vh){
+@media (max-width: 999px){
+  nav{
+    position: sticky;
+  }
+
 	nav .burger i{
 		display: block;
 	}
